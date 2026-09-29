@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тебе ❤️</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(160deg, #ffd1e3, #ff9ec4);
+    font-family: Georgia, serif;
+    color: #7a1f47;
+    text-align: center;
+  }
+  .card {
+    background: rgba(255,255,255,0.75);
+    margin: auto;
+    padding: 36px 26px;
+    border-radius: 26px;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(122,31,71,0.25);
+  }
+  h1 { font-size: 36px; margin: 0 0 20px; }
+  p { font-size: 22px; line-height: 1.6; margin: 0 0 18px; }
+  .heart { font-size: 56px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Имя, любимая</h1>
+    <p>Ты самый ценный человек в моей жизни.</p>
+    <p>Мы вместе уже так долго, и я каждый день благодарен, что ты рядом. С тобой мне спокойно, тепло и по-настоящему хорошо.</p>
+    <p>Ты поддерживаешь меня, понимаешь меня и делаешь мою жизнь ярче. Рядом с тобой я становлюсь лучше.</p>
+    <p>Я не всегда говорю это вслух, но ты значишь для меня больше, чем я могу выразить словами.</p>
+    <p>Спасибо тебе за всё. Я тебя люблю. Очень-очень.</p>
+    <div class="heart">💕</div>
+  </div>
+  <script>
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();
+  </script>
+</body>
+</html>
